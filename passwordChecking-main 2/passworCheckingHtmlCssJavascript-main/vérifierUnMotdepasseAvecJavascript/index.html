@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- relier le fichier CSS au html -->
+ <link rel="stylesheet" href="./style.css">
+    <title>Vérifier un mot de passe en JAVASCRIPT HTML CSS</title>
+</head>
+<body>
+
+    <div class="container">
+        <form action="">
+            <label >Utilisateur</label>
+            <input type="text" required>
+            <label> Mots de passe</label>
+           <input type="password" name="" id="psw" required>
+           <i class="fas fa-eye"></i>
+           <input type="submit" value="Envoyé">
+        </form>
+    </div>
+  
+    <div id="message"  >
+    <h3>Le mot de passe doit contenir les éléments suivants</h3>
+    <p id="letter" class="invalid">Une lettre minuscule</p>
+    <p id="capital" class="invalid">une lettre majuscule</p>
+    <p id="number" class="invalid">un chiffre</p>
+    <p id="lenght" class="invalid">8 caractères minimum</p>
+    </div>
+
+    <!-- relier le fichier javascript au html  amettre acet endroit précis-->
+    <script src="./script.js"></script>
+</body>
+
+</html>

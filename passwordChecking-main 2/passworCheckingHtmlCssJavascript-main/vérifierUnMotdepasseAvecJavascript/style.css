@@ -1,0 +1,128 @@
+/* Import de la police Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+/*  reset du css */
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+/* Mise en forme du body */
+body
+{
+    background-color: blueviolet;
+    background-image: url(./anonymous-gc859febdf_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+    padding-top: 500px;
+   padding-right: 140px;
+}
+
+/* Stylisation du conteneur pour les entrées */
+.container
+{
+    background-color: blanchedalmond;
+    width: 350px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: O 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;   
+}
+
+/* Mise en form de l' input  */
+input
+{
+  padding: 12px;
+  border: 1px solid #ccc;
+  outline: 0;
+  border-radius: 4px;
+  margin-top: 5px;
+  margin-bottom: 8px;   
+}
+
+/* Personnalisation du bouton d'envoi "Envoyer" */
+input[type="submit" ]
+{
+   background-color: #675afe;
+   color: white;
+   border: 1px solid #675afe;    
+}
+
+/* Personnalisation de la boîte de message */
+#message
+{
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 6px;
+    width: 350px;
+    color: black;
+    position: relative;
+    margin-top: 10px;
+    letter-spacing: 0.5px ;   
+}
+
+/* Personnalisation des titres H3*/
+h3
+{
+    font-size: 16px;
+    font-weight: 400;    
+}
+
+/* Personnalisation  des paragraphes dans la div message */
+#message p 
+{ 
+   margin-left: 7px;
+   padding: 7px 0;
+   font-size: 15px;
+}
+
+ /* lorsque les exigences sont érronées*/
+ .invalid
+{ 
+    color: red;
+}
+
+.invalid:before
+{ 
+   position:relative;
+   left: -7px;
+   content: "X"
+}
+
+/* lorsque les exigences sont respectées */
+.valid
+{ 
+    color: green;
+       
+}
+
+.valid:before
+{ 
+    position:relative;
+    left: -7px;
+    content: "ok"      
+}   
+
+/* animation du message */
+@keyframes anime {
+    from{
+       transform: translateY(100px);
+    }
+}
+
+
